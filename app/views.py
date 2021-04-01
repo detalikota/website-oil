@@ -5,4 +5,7 @@ def home(request):
 
 def test(request):
     return render(request, 'app/test.html')
+    
+def allexamples(request):
+    return render(request, 'app/all-examples.html')
 
