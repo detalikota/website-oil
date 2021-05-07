@@ -4,13 +4,13 @@ body {
 .logo {
     font-family: 'Monoton', cursive;
     color: #458AF1;
-    font-size: 50px;
+    font-size: 40px;
 }
 .divider {
     height: 20px;
     width: 1px;
     margin: 10px 5px;
-    border-right: 1px solid rgba(0, 0, 0, 0.61);
+    border-right: 1px solid rgba(255, 255, 255, 0.829);
  }
 
 .navbar-toggler {
@@ -42,4 +42,11 @@ a {
        
     }
 
+
 }
+
+@media (min-width: 575.98px) { 
+    .logo {
+        font-size: 50px;
+    }
+ }
