@@ -5,7 +5,7 @@ body {
 .logo {
     font-family: 'Monoton', cursive;
     color: #458AF1;
-    font-size: 40px;
+    font-size: 50px;
 }
 .divider {
     height: 20px;
@@ -13,49 +13,67 @@ body {
     margin: 10px 5px;
     border-right: 1px solid rgba(255, 255, 255, 0.829);
  }
+.dropdown-item:hover {
+    background-color: rgba(68, 65, 65, 0.664);
+} 
+.form-control {
+    width: 130px;
+}
+@media (max-width: 1401px) {  
+   .my-menu {
+       white-space: nowrap;
+   }  
+   .form-control {
+    width: 110px;
+}
+}
 
-.navbar-toggler {
-    background-color:rgba(0, 0, 0, 0)
-}
-.dropdown-menu {
-    border:0px;
-}
-.navbar-toggler-icon{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.911%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")}
-
-a {
-    color: black;
-}
-@media (min-width: 992px) { 
-    .menu-bg {
-        background-color: #458AF1;
-    }
-    .navbar{
-        float: right;
-        height: 30px;
-        margin-top: 20px;
-    }
-    .dropdown-menu {
-        border:2px;
-    }
-    a {
-        color: white;
-       
-    }
-}
-@media (min-width: 575.98px) { 
+@media (max-width: 370px) {  
     .logo {
-        font-size: 50px;
+        font-size: 30px;
     }
  }
-ul .dropdown-menu {
-    background-color: teal;
-}
-@media (max-width: 992px) { 
-    .logo {
-        display: none;
-    }
-    .hide-mobile {
-        display: none;
-    }
 
+.red {
+    background-color: red;
+    height: 300px;
+    margin-top: 50px;
+ }
+.yellow {
+    background-color: yellow;
+    height: 300px;
+    margin-top: 50px;
+}
+.green {
+    background-color: green;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.my-list {
+    list-style-type: none;
+
+}
+.list {
+    border-bottom: solid 1px white;
+    padding: 3px 0px;
+}
+.my-first-list {
+    font-weight: bold;
+    border-top: solid 2px white;
+    border-bottom: solid 1px white;
+    padding: 3px 0px;
+}
+@media (min-width: 605px) and (max-width: 991px) {  
+    .width-80 {
+        max-width: 80%;
     }
+ }
+@media (max-width: 605px) {  
+    .width-95 {
+        width: 95%;
+    }
+ }
+.full-width {
+    width: 100%;
+}
