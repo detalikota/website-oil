@@ -77,3 +77,10 @@ body {
 .full-width {
     width: 100%;
 }
+
+@media (max-width: 991.98px) { 
+    .navbar {
+        flex-wrap: wrap;
+    }
+}
+
