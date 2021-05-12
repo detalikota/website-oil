@@ -1,6 +1,6 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(255, 217, 217);
+    background-color: rgb(227, 246, 255);
 }
 .logo {
     font-family: 'Monoton', cursive;
@@ -33,23 +33,58 @@ body {
         font-size: 30px;
     }
  }
-
-.red {
-    background-color: red;
-    height: 300px;
-    margin-top: 50px;
- }
-.yellow {
-    background-color: yellow;
-    height: 300px;
-    margin-top: 50px;
+.my-square {
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    margin-top: 30px;
+    width: 400px;
+    font-size: 20px;
 }
-.green {
-    background-color: green;
-    height: 300px;
-    margin-top: 50px;
+.my-square-2 {
+    background-color: #458AF1;
+    height: 200px;
+    margin-top: 30px;
+    width: 400px;
+    font-size: 20px;
 }
-
+.my-square-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.my-hover-text {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    font-size: 15px;
+    display: none;
+}
+.my-hover-text-2 {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-size: 15px;
+    display: none;
+}
+.my-square:hover .my-hover-text {
+    display: block;
+}
+.my-square:hover .my-hover-text-2 {
+    display: block;
+}
+.my-square-2:hover .my-hover-text {
+    display: block;
+}
+.my-square-2:hover .my-hover-text-2 {
+    display: block;
+}
+.my-square:hover {
+    background-color: rgb(255, 238, 4);
+} 
+.my-square-2:hover {
+    background-color: rgb(9, 175, 9);
+} 
 .my-list {
     list-style-type: none;
 
