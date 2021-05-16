@@ -153,3 +153,20 @@ body {
   {
     color: rgb(56, 255, 16);
 }
+.about {
+    background-image: url(pictures/about.jpg);
+    height: 700px;
+    background-size: cover;
+    background-position: bottom;
+}
+.about-description {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+}
+.about-text {
+    
+}
