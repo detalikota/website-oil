@@ -81,9 +81,13 @@ body {
 }
 .my-square:hover {
     background-color: rgb(255, 238, 4);
+    margin-top: 20px;
+    transition: background-color 0.5s ease, margin-top 0.1s linear;;
 } 
 .my-square-2:hover {
     background-color: rgb(9, 175, 9);
+    margin-top: 20px;
+    transition: background-color 0.5s ease, margin-top 0.1s linear;;
 } 
 .my-list {
     list-style-type: none;
@@ -143,4 +147,9 @@ body {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+}
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item:hover .nav-link
+  {
+    color: rgb(56, 255, 16);
 }
