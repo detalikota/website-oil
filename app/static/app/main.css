@@ -151,22 +151,69 @@ body {
 .navbar-nav .nav-item.active .nav-link,
 .navbar-nav .nav-item:hover .nav-link
   {
-    color: rgb(56, 255, 16);
+    color: rgb(16, 128, 255);
 }
 .about {
     background-image: url(pictures/about.jpg);
     height: 700px;
     background-size: cover;
     background-position: bottom;
+    
 }
 .about-description {
     position: absolute;
     bottom: 100px;
     left: 100px;
-    color: white;
-    font-size: 40px;
+    padding-bottom: 130px;
+}
+.colorful {
+    font-size: 50px;
     font-weight: bold;
+    background: -webkit-linear-gradient(#0caeeb, #004aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .about-text {
-    
+    text-align: justify;
+}
+.bottom-dropdown-content {
+    display: none;
+    position: relative;
+    min-width: 100px;
+    background-color: #212529;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.397);
+    z-index:1;   
+}
+.bottom-dropdown-content a {
+    color: white;
+    padding: 6px 8px;
+    text-decoration: none;
+    display: block;
+   
+}
+.bottom-dropdown-show {
+    display:block;
+}
+td, tr {
+    border: 2px solid rgb(0, 132, 255);
+  }
+.sverlenie-image {
+    max-width: 500px;
+    margin: 10px;
+    float:right;
+
+}
+.text-sverlenie {
+    margin:10px;
+    clear:right;
+}
+li a {
+    text-decoration: none;
+    color: white
+}
+li a:hover {
+    color:rgb(0, 132, 255)
+}
+.horizon-3 {
+    height: 435px;
 }

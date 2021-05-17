@@ -1,6 +1,9 @@
 {% extends "app/base.html" %}
 {% load static %}
-
+{% block head %}
+<meta name="description" content="WellDrill главная страница">
+<title>WellDrill официальный веб-сайт</title>
+{% endblock head %}
 {% block content %}
     <div class="container">
         <div id="carouselExampleCaptions" class="carousel slide mt-4 d-none d-md-block" data-bs-ride="carousel">
@@ -11,21 +14,21 @@
             </div>
             <div class="carousel-inner rounded">
               <div class="carousel-item active my-bottom">
-                <img src="{% static 'app/pictures/carousel-1.jpg' %}" class="d-block w-100" alt="Well drilling machine">
+                <img src="{% static 'app/pictures/carousel-1.jpg' %}" class="d-block w-100" alt="Машина для бурения WellDrill">
                 <div class="carousel-caption d-none d-md-block car-1">
                   <h5 class="my-bg-grey">Бурим глубоко</h5>
                   <p class="my-bg-grey">Мы бурим настолько глубоко, насколько это нужно</p>
                 </div>
               </div>
               <div class="carousel-item my-bottom">
-                <img src="{% static 'app/pictures/carousel-2.jpg' %}" class="d-block w-100" alt="Well drilling machine">
+                <img src="{% static 'app/pictures/carousel-2.jpg' %}" class="d-block w-100" alt="Процесс бурения в компании WellDrill">
                 <div class="carousel-caption d-none d-md-block car-2">
                   <h5 class="my-bg-grey">Выкачиваем</h5>
                   <p class="my-bg-grey">Выкачиваем из-под земли чистейшую воду</p>
                 </div>
               </div>
               <div class="carousel-item my-bottom-2">
-                <img src="{% static 'app/pictures/carousel-3.jpg' %}" class="d-block w-100" alt="Well drilling machine">
+                <img src="{% static 'app/pictures/carousel-3.jpg' %}" class="d-block w-100" alt="Бурением скважины на воде">
                 <div class="carousel-caption d-none d-md-block car-3">
                   <h5 class="my-bg-grey">В любое время</h5>
                   <p class="my-bg-grey">Работаем круглые сутки до результата</p>
