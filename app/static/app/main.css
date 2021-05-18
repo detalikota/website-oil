@@ -17,15 +17,18 @@ body {
     background-color: rgba(68, 65, 65, 0.664);
 } 
 .form-control {
-    width: 130px;
+    width: 175px;
 }
 @media (max-width: 1401px) {  
    .my-menu {
        white-space: nowrap;
    }  
    .form-control {
-    width: 110px;
-}
+    width: 140px; 
+    }
+input::placeholder {
+    font-size: 12px;
+    }
 }
 
 @media (max-width: 370px) {  
@@ -247,4 +250,20 @@ li a:hover {
 }
 td {
     vertical-align: text-top;
+}
+.search-link {
+    color:rgb(0, 132, 255);
+    font-weight: bold;
+}
+.search-table tr, .search-table th, .search-table td{
+    border: 1px solid rgb(2, 0, 0);
+
+}
+.search-table thead tr th{
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    border: 1px solid black;
+}
+.cap {
+    text-transform: capitalize;
 }

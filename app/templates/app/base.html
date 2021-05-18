@@ -63,9 +63,9 @@
                             </ul>
 
                         </div>
-                        <form class="d-flex d-none d-xl-flex">
-                            <input class="form-control me-2" type="search" placeholder="Найти" aria-label="Search">
-                            <button class="btn btn-outline-secondary" type="submit">Поиск</button>
+                        <form action="{% url 'app:search' %}" method='get' class="d-flex d-none d-xl-flex">
+                            <input name="q" class="form-control me-2" type="text" placeholder="Поиск по услугам" aria-label="Search">
+                            <button class="btn btn-outline-secondary" type="submit">Найти</button>
                         </form>
                     </div>
                 </nav>

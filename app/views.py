@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView
+from django.db.models import Q
 from .models import Service
 
 def home(request):
@@ -19,9 +20,20 @@ class SearchResultsView(ListView):
     template_name = 'app/search.html'
 
     def get_queryset(self):
-        return Service.objects.filter(
-            name__icontains='е'
-        ) .exclude(
-            name__icontains='Сверление'
+        query = (self.request.GET.get('q')).lower()
+        object_list = Service.objects.filter(
+            Q(name__icontains=query) | Q(description__icontains=query)
         )
+        return object_list
+
+    # def get_queryset(self):
+    #     return Service.objects.filter(
+    #         name__icontains='е'
+    #     ) .exclude(
+    #         name__icontains='Бурение'
+    #     )
+    # def get_queryset(self):
+    #     return Service.objects.filter(
+    #         Q(name__icontains='Бурение') | Q(description__icontains='разных форм')
+    #     )
 
