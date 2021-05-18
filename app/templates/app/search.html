@@ -1,0 +1,15 @@
+{% extends "app/base.html" %}
+{% load static %}
+{% block head %}
+<meta name="description" content="Выдача поискового запроса">
+<title>Результаты поиска</title>
+{% endblock head %}
+{% block content %}
+<ul>
+    {% for service in object_list %}
+    <li>
+        {{ service.name }}, {{ service.description }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock content %}

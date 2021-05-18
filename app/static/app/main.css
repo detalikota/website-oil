@@ -103,6 +103,26 @@ body {
     border-bottom: solid 1px white;
     padding: 3px 0px;
 }
+.colorful {
+    font-size: 50px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#0caeeb, #004aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.colorful-2 {
+    font-size: 50px;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#0caeeb, #004aff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-description {
+    position: relative;
+    bottom: -70%;
+    left: 5%;
+    padding-bottom: 130px;
+}
 @media (min-width: 605px) and (max-width: 991px) {  
     .width-80 {
         max-width: 80%;
@@ -111,6 +131,15 @@ body {
 @media (max-width: 605px) {  
     .width-95 {
         width: 95%;
+    }
+    .colorful-2 {
+        font-size: 45px;
+    }
+    .about-description {
+        position: relative;
+        bottom: -75%;
+        left: 5%;
+        padding-bottom: 130px;
     }
  }
 .full-width {
@@ -160,19 +189,8 @@ body {
     background-position: bottom;
     
 }
-.about-description {
-    position: absolute;
-    bottom: 100px;
-    left: 100px;
-    padding-bottom: 130px;
-}
-.colorful {
-    font-size: 50px;
-    font-weight: bold;
-    background: -webkit-linear-gradient(#0caeeb, #004aff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
+
 .about-text {
     text-align: justify;
 }
@@ -216,4 +234,17 @@ li a:hover {
 }
 .horizon-3 {
     height: 435px;
+}
+@media (max-width: 770px) {
+    .about-table {
+        font-size: 12px;
+    }
+}
+@media (max-width: 466px) {
+    .about-table {
+        font-size: 10px;
+    }
+}
+td {
+    vertical-align: text-top;
 }
