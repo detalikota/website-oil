@@ -267,3 +267,18 @@ td {
 .cap {
     text-transform: capitalize;
 }
+.dropbtn:hover {
+    color:rgb(0, 132, 255);
+}
+.auto-text {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #458AF1;
+    font-weight: bold;
+    padding-top: 10px;
+    
+}
+.col-sm-9 a {
+
+    color: black;
+}
