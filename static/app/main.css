@@ -186,7 +186,7 @@ input::placeholder {
     color: rgb(16, 128, 255);
 }
 .about {
-    background-image: url("/static/app/pictures/about.jpg");
+    /*background-image: url("/static/app/pictures/about.jpg");*/
     height: 700px;
     background-size: cover;
     background-position: bottom;
