@@ -1,3 +1,4 @@
+{% load staticfiles %}
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(227, 246, 255);
@@ -186,7 +187,7 @@ input::placeholder {
     color: rgb(16, 128, 255);
 }
 .about {
-    background-image: url(pictures/about.jpg);
+    background-image: url("static/pictures/about.jpg");
     height: 700px;
     background-size: cover;
     background-position: bottom;
